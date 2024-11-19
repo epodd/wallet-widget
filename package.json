@@ -1,13 +1,12 @@
 {
   "name": "wallet-widget",
   "type": "module",
-  "main": "dist/wallet-widget.umd.cjs",
-  "module": "dist/wallet-widget.es.js",
-  "types": "dist/wallet-widget.d.ts",
+  "main": "dist/wallet-widget.js",
+  "module": "dist/wallet-widget.js",
   "exports": {
     ".": {
-      "import": "./dist/wallet-widget.es.js",
-      "require": "./dist/wallet-widget.umd.cjs"
+      "import": "./dist/wallet-widget.js",
+      "require": "./dist/wallet-widget.js"
     }
   },
   "private": true,

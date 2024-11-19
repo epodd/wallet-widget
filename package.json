@@ -1,8 +1,17 @@
 {
   "name": "wallet-widget",
+  "type": "module",
+  "main": "dist/wallet-widget.umd.cjs",
+  "module": "dist/wallet-widget.es.js",
+  "types": "dist/wallet-widget.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/wallet-widget.es.js",
+      "require": "./dist/wallet-widget.umd.cjs"
+    }
+  },
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -10,9 +19,6 @@
     "preview": "vite preview"
   },
   "files": ["dist"],
-  "exports": "./dist/wallet-widget.js",
-  "module": "./dist/wallet-widget.js",
-  "types": "./dist/wallet-widget.d.ts",
   "dependencies": {
     "path": "^0.12.7",
     "react": "^18.3.1",

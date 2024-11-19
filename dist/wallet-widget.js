@@ -1,7 +1,5 @@
-import { jsx as r, Fragment as e } from "react/jsx-runtime";
-function n() {
-  return /* @__PURE__ */ r(e, { children: /* @__PURE__ */ r("div", { children: "widget" }) });
-}
+import { jsx as r } from "react/jsx-runtime";
+const o = () => /* @__PURE__ */ r("div", { children: "BUTTON" });
 export {
-  n as App
+  o as Button
 };
